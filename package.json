@@ -5,9 +5,11 @@
     "cypress-tags": "^1.0.0"
   },
   "scripts": {
+    "cypress:open": "npx cypress open",
     "allTests-headless": "npx cypress run",
     "allTests-headed": "npx cypress run --headed",
     "allTests-chrome": "npx cypress run --browser chrome",
+    "allTests-chrome-headed": "npx cypress run --browser chrome --headed",
     "allTests-firefox": "npx cypress run --browser firefox",
     "allTests-multiBrowser": "npm run allTests-headed -- --browser firefox & npm run allTests-headed -- --browser chrome"
   },
