@@ -18,6 +18,7 @@ describe("Existing user", () => {
     signin_PO.visitSigninPage();
   });
   //regression, negative
+  //using an account which has already hit max project count limit.
   it("cannot add more than 3 projects in a basic plan", () => {
     signin_PO.enterEmail(USER_EMAIL_PROJ_LIMIT);
     signin_PO.enterPassword(USER_EMAIL_PROJ_LIMIT_PASSWORD);
