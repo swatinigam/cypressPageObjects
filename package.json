@@ -10,5 +10,9 @@
     "allTests-chrome": "npx cypress run --browser chrome",
     "allTests-firefox": "npx cypress run --browser firefox",
     "allTests-multiBrowser": "npm run allTests-headed -- --browser firefox & npm run allTests-headed -- --browser chrome"
+  },
+  "dependencies": {
+    "mocha": "^10.0.0",
+    "mochawesome": "^7.1.3"
   }
 }
