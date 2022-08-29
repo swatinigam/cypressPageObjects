@@ -11,7 +11,7 @@ describe("Existing user", () => {
   before(function () {
     signin_PO.visitSigninPage();
   });
-  //sanity
+  //smoke
   it("can submit email to receive account unlock instructions", () => {
     signin_PO.clickAccountLockedLink();
     accountUnlock_PO.verifyAccountUnlockPageUrl();
