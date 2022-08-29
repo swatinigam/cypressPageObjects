@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "cypress": "^10.6.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-tags": "^1.0.0"
+  },
+  "scripts": {
+    "allTests-headless": "npx cypress run",
+    "allTests-headed": "npx cypress run --headed",
+    "allTests-chrome": "npx cypress run --browser chrome",
+    "allTests-firefox": "npx cypress run --browser firefox",
+    "allTests-multiBrowser": "npm run allTests-headed -- --browser firefox & npm run allTests-headed -- --browser chrome"
+  }
+}
